@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projekty Webových stránek | Sára Forejtová</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo-area">Forejtová Sára</div>
+    <button class="hamburger"><span></span><span></span><span></span></button>
+    <nav class="nav-buttons">
+      <a href="index.html" class="btn-outline">domů</a>
+      <a href="www.html" class="btn-outline active">web stránky</a>
+      <a href="dim.html" class="btn-outline">grafika</a>
+      <a href="kresby.html" class="btn-outline">kresby</a>
+      <a href="kontakt.html" class="btn-outline">kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="gallery-hero">
+      <div class="hero-bg"><div class="gradient-anim"></div></div>
+      <h1 class="gallery-title">webové stránky</h1>
+    </section>
+
+    <section class="filter-section">
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">Vše</button>
+      </div>
+
+      <div class="gallery-grid">
+        
+        <div class="gallery-item" 
+           data-title="Hotel Palace" 
+           data-desc="Pokud máte zájem o prohlédnutí webu: sarunq.github.io" 
+           data-images="obsah/weby/hotel.png">
+     
+          <img src="obsah/weby/hotel.png" alt="Náhled">
+     
+           <div class="work-label">Hotel Palace</div>
+           <div class="work-sublabel">Single-page web</div>
+      </div>
+
+        <div class="gallery-item" 
+           data-title="Kočičí kavárna" 
+           data-desc="Jednoduchý web s galerií a rezervační stránkou" 
+           data-images="obsah/weby/kavarna.png, obsah/weby/kavarna2.png, obsah/weby/kavarna3.png">
+     
+          <img src="obsah/weby/kavarna.png" alt="Náhled">
+     
+           <div class="work-label">Kočičí kavárna </div>
+           <div class="work-sublabel">Jednoduchý web</div>
+      </div>
+
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-logo">FOREJTOVÁ SÁRA</div>
+    <div class="footer-links">
+        <a href="index.html">Domů</a>
+        <a href="www.html">Projekty</a>
+        <a href="kontakt.html">Kontakt</a>
+    </div>
+    <div class="social-icons">
+        <a href="#" class="social-circle">IG</a>
+        <a href="#" class="social-circle">LI</a>
+        <a href="#" class="social-circle">FB</a>
+    </div>
+    <div class="footer-copy">© 2024 Sára Forejtová.</div>
+  </footer>
+
+  <div id="lightbox" class="lightbox">
+      <span class="lightbox-close">&times;</span>
+      
+      <button class="lb-arrow lb-prev">&#10094;</button>
+      
+      <div class="lightbox-content">
+          <img src="" alt="Detail" class="lightbox-img">
+          <div class="lightbox-text">
+              <h2 id="lb-title"></h2>
+              <p id="lb-desc"></p>
+              <p id="lb-counter" style="font-size: 0.8rem; opacity: 0.6; margin-top: 5px;"></p>
+          </div>
+      </div>
+  
+      <button class="lb-arrow lb-next">&#10095;</button>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

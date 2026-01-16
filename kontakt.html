@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontakt | Sára Forejtová</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo-area">Forejtová Sára</div>
+    <button class="hamburger"><span></span><span></span><span></span></button>
+    <nav class="nav-buttons">
+      <a href="index.html" class="btn-outline">domů</a>
+      <a href="www.html" class="btn-outline">web stránky</a>
+      <a href="dim.html" class="btn-outline">grafika</a>
+       <a href="kresby.html" class="btn-outline">kresby</a>
+      <a href="kontakt.html" class="btn-outline active">kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-main" style="min-height: 80vh; height: auto; padding-bottom: 50px;">
+      
+      <div class="hero-container">
+        <h1 class="gallery-title" style="font-size: 3rem; margin-top: 60px;">Využijte mé služby</h1>
+        <h1 style="font-size: 2rem; margin-bottom: 20px;">Kontaktujte mne přes tento formulář</h1>
+
+        <div class="contact-form-container">
+            
+            <form action="https://api.sheetmonkey.io/form/VASE_DLOUHE_CISLO" method="POST" class="contact-form">
+                
+                <div class="form-group">
+                    <label for="name">Křestní jméno</label>
+                    <input type="text" id="name" name="name" placeholder="Např. Petr" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Váš Email</label>
+                    <input type="email" id="email" name="email" placeholder="petr@email.cz" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="project-type">O jaký typ služby máte zájem?</label>
+                    <div class="select-wrapper">
+                        <select id="project-type" name="project-type" required>
+                            <option value="" disabled selected>Vyberte možnost</option>
+                            <option value="Webové stránky">Webové stránky / Kódování</option>
+                            <option value="Grafický design">Grafický design</option>
+                            <option value="Kresby a umění">Kresby a umění</option>
+                            <option value="Jiné">Jiné</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Poznámka</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Napište mi více o vaší představě..."></textarea>
+                </div>
+
+                <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+
+                <button type="submit" class="modern-btn submit-btn">Odeslat</button>
+            </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-logo">FOREJTOVÁ SÁRA</div>
+    <div class="footer-links">
+        <a href="index.html">Domů</a>
+        <a href="dim.html">Projekty</a>
+        <a href="kontakt.html">Kontakt</a>
+    </div>
+    <div class="footer-copy">© 2024 Sára Forejtová.</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

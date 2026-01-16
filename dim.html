@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Designové Projekty | Sára Forejtová</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo-area">Forejtová Sára</div>
+    <button class="hamburger"><span></span><span></span><span></span></button>
+    <nav class="nav-buttons">
+      <a href="index.html" class="btn-outline">domů</a>
+      <a href="www.html" class="btn-outline">web stránky</a>
+      <a href="dim.html" class="btn-outline active">grafika</a>
+       <a href="kresby.html" class="btn-outline">kresby</a>
+      <a href="kontakt.html" class="btn-outline">kontakt</a>
+      
+    </nav>
+  </header>
+
+  <main>
+    <section class="gallery-hero">
+      <div class="hero-bg"><div class="gradient-anim"></div></div>
+      <h1 class="gallery-title">grafické a foto práce</h1>
+    </section>
+
+    <section class="filter-section">
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">Vše</button>
+        <button class="filter-btn" data-filter="cat-1">Branding</button>
+        <button class="filter-btn" data-filter="cat-2">Koláže</button>
+        <button class="filter-btn" data-filter="cat-3">Brožurky</button>
+      </div>
+
+      <div class="gallery-grid">
+        
+        <div class="gallery-item cat-1" 
+           data-title="Branding" 
+           data-desc="Toto je práce na branding na mnou uměle vytvořenou firmu, zabývající se výrobou speciálních plyšových produktů" 
+           data-images="obsah/dimka/branding1.png, obsah/dimka/branding2.png, obsah/dimka/branding3.png, obsah/dimka/branding4.png, obsah/dimka/branding5.png, obsah/dimka/branding6.png, obsah/dimka/branding7.png, obsah/dimka/branding8.png, obsah/dimka/branding9.png, obsah/dimka/branding10.png, obsah/dimka/branding11.png">
+     
+          <img src="obsah/dimka/branding1.png" alt="Náhled">
+     
+           <div class="work-label">Branding firmy - Peaceful</div>
+           <div class="work-sublabel">Větší projekt</div>
+      </div>
+
+        <div id="persona" class="gallery-item cat-1" 
+           data-title="Zákaznická persona" 
+           data-desc="Uměle vytvořena zákaznická persona pro můj projekt v brandingu" 
+           data-images="obsah/dimka/branding_persona.png">
+     
+          <img src="obsah/dimka/branding_persona.png" alt="Náhled">
+     
+           <div class="work-label">Zákaznická persona </div>
+           <div class="work-sublabel">Doplněk k projektu Branding</div>
+      </div>
+
+      <div class="gallery-item cat-1" 
+           data-title="Billboard" 
+           data-desc="Billboard pro fiktivni firmu Peaceful zasazený v prostředí." 
+           data-images="obsah/dimka/branding_billboard.png">
+     
+          <img src="obsah/dimka/branding_billboard.png" alt="Náhled">
+     
+           <div class="work-label">Billboard Peaceful</div>
+           <div class="work-sublabel">Doplněk k projektu Branding</div>
+      </div>
+
+        <div class="gallery-item cat-3" 
+           data-title="Brožurka Hello Kitty" 
+           data-desc="Jednoduchá brožurka o příběhu Hello Kitty."
+           data-images="obsah/dimka/brozurka_hk1.png, obsah/dimka/brozurka_hk2.png">
+     
+          <img src="obsah/dimka/brozurka_hk1.png" alt="Náhled">
+     
+           <div class="work-label">Brožurka Hello Kitty </div>
+           <div class="work-sublabel">Tří stránková brožurka</div>
+      </div>
+
+      <div class="gallery-item cat-3" 
+           data-title="Brožurka Květiny" 
+           data-desc="Jednoduchá brožurka jako návrh propagačních tiskovin pro květinářství"
+           data-images="obsah/dimka/brozurka_k1.png, obsah/dimka/brozurka_k2.png">
+     
+          <img src="obsah/dimka/brozurka_k1.png" alt="Náhled">
+     
+           <div class="work-label">Brožurka Květinářství </div>
+           <div class="work-sublabel">Návrh skládací brožurky</div>
+      </div>
+
+      <div class="gallery-item cat-2" 
+           data-title="Koláž fotografií s prvky digitální kresby" 
+           data-desc="Hravý menší projekt pro propojení fotografií a digitální kresby na motivy vílího světa"
+           data-images="obsah/dimka/kolaz.png">
+     
+          <img src="obsah/dimka/kolaz.png" alt="Náhled">
+     
+           <div class="work-label">Koláž - Víla u lesa</div>
+           <div class="work-sublabel">Hravý menší projekt</div>
+      </div>
+
+      <div class="gallery-item cat-3" 
+           data-title="Brožurka pro projekt Víla u lesa" 
+           data-desc="Tato brožurka slouží k náhledu na BTS vytváření koláže, postup, pocity, překážky.. atd."
+           data-images="obsah/dimka/kolaz_b1.png, obsah/dimka/kolaz_b2.png">
+     
+          <img src="obsah/dimka/kolaz_b1.png" alt="Náhled">
+     
+           <div class="work-label">Brožurka Víla u lesa </div>
+           <div class="work-sublabel">Doplněk k projektu Víla u lesa</div>
+      </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-logo">FOREJTOVÁ SÁRA</div>
+    <div class="footer-links">
+        <a href="index.html">Domů</a>
+        <a href="dim.html">Projekty</a>
+        <a href="kontakt.html">Kontakt</a>
+    </div>
+    <div class="social-icons">
+        <a href="#" class="social-circle">IG</a>
+        <a href="#" class="social-circle">LI</a>
+        <a href="#" class="social-circle">FB</a>
+    </div>
+    <div class="footer-copy">© 2024 Sára Forejtová.</div>
+  </footer>
+
+  <div id="lightbox" class="lightbox">
+      <span class="lightbox-close">&times;</span>
+      
+      <button class="lb-arrow lb-prev">&#10094;</button>
+      
+      <div class="lightbox-content">
+          <img src="" alt="Detail" class="lightbox-img">
+          <div class="lightbox-text">
+              <h2 id="lb-title"></h2>
+              <p id="lb-desc"></p>
+              <p id="lb-counter" style="font-size: 0.8rem; opacity: 0.6; margin-top: 5px;"></p>
+          </div>
+      </div>
+  
+      <button class="lb-arrow lb-next">&#10095;</button>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
